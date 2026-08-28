@@ -1,5 +1,6 @@
 ---
-permalink: /TERMS_OF_SERVICE.md
+layout: default
+title: Terms of Service
 ---
 
 
@@ -12,7 +13,7 @@ Welcome to Blocktomic. These Terms & Conditions ("Terms") govern your use of the
 ## 1. Acceptance of Terms
 
 By using the App you confirm that:
-- you have read and understood these Terms and the [Privacy Policy](PRIVACY_POLICY.md);
+- you have read and understood these Terms and the [Privacy Policy](PRIVACY_POLICY.html);
 - you are at least 13 years old (or the minimum age required in your country);
 - you have the legal capacity to accept these Terms.
 
@@ -35,7 +36,7 @@ Subject to these Terms, we grant you a limited, non-exclusive, non-transferable,
 
 ## 4. User Data and Privacy
 
-Your workout data, profile and settings are stored locally on your device and are not collected by us. Your data is processed in accordance with our [Privacy Policy](PRIVACY_POLICY.md), which forms an integral part of these Terms.
+Your workout data, profile and settings are stored locally on your device and are not collected by us. Your data is processed in accordance with our [Privacy Policy](PRIVACY_POLICY.html), which forms an integral part of these Terms.
 
 ## 5. Location / GPS
 

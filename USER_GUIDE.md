@@ -1,5 +1,6 @@
 ---
-permalink: /USER_GUIDE.md
+layout: default
+title: User Guide
 ---
 
 
@@ -9,7 +10,7 @@ Blocktomic is an offline-first workout timer and tracker for interval training
 (Tabata, HIIT, endurance and strength). No account, no registration: your
 workouts, sessions and profile are stored locally on your device.
 
-> 🇮🇹 Guida in italiano: [USER_GUIDE.it.md](USER_GUIDE.it.md)
+> 🇮🇹 Guida in italiano: [USER_GUIDE.it.html](USER_GUIDE.it.html)
 
 ---
 
@@ -165,7 +166,7 @@ Blocktomic always picks the best link available:
 
 Opening the link (or scanning the QR) shows a preview → **"Add to my library"** saves a copy locally. No account needed.
 
-> Privacy note: a shared workout contains only its structure (blocks, times, distances). When you share while online, that structure is stored anonymously on Google Cloud Firestore so the short link keeps working; nothing else is attached to it. See [PRIVACY_POLICY.md](PRIVACY_POLICY.md).
+> Privacy note: a shared workout contains only its structure (blocks, times, distances). When you share while online, that structure is stored anonymously on Google Cloud Firestore so the short link keeps working; nothing else is attached to it. See [PRIVACY_POLICY.html](PRIVACY_POLICY.html).
 
 <p align="center">
   <img src="screenshots/guide/share_qr_sheet.png" alt="QR share sheet" width="260"/>
@@ -259,7 +260,7 @@ Votes and proposals are stored anonymously on Firebase and require the optional 
 - All your workouts, sessions and profile data are stored **only on your device**.
 - GPS is used **only during active workouts**, never saved as routes and never sent anywhere.
 - **Optional** anonymous statistics (usage events + crash reports) are sent to Firebase **only if you give consent** (a dialog appears on first launch; you can change it anytime in Settings → Privacy). No personal data is collected.
-- Full policy: [PRIVACY_POLICY.md](PRIVACY_POLICY.md)
+- Full policy: [PRIVACY_POLICY.html](PRIVACY_POLICY.html)
 
 ## 14. FAQ
 

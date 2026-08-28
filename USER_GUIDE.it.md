@@ -1,5 +1,6 @@
 ---
-permalink: /USER_GUIDE.it.md
+layout: default
+title: Guida per l'utente
 ---
 
 
@@ -9,7 +10,7 @@ Blocktomic è un timer e tracciatore di allenamenti a intervalli (Tabata, HIIT,
 endurance e forza) che funziona offline. Niente account, niente registrazione:
 i tuoi workout, le sessioni e il profilo sono salvati solo sul tuo dispositivo.
 
-> 🇬🇧 English guide: [USER_GUIDE.md](USER_GUIDE.md)
+> 🇬🇧 English guide: [USER_GUIDE.html](USER_GUIDE.html)
 
 ---
 
@@ -165,7 +166,7 @@ Blocktomic sceglie sempre il link migliore disponibile:
 
 Chi apre il link (o inquadra il QR) vede un'anteprima → **"Add to my library"** salva una copia in locale. Nessun account necessario.
 
-> Nota privacy: un workout condiviso contiene solo la sua struttura (blocchi, tempi, distanze). Condividendo online, quella struttura viene salvata in forma anonima su Google Cloud Firestore perché il link corto continui a funzionare; non viene allegato nulla d'altro. Vedi [PRIVACY_POLICY.md](PRIVACY_POLICY.md).
+> Nota privacy: un workout condiviso contiene solo la sua struttura (blocchi, tempi, distanze). Condividendo online, quella struttura viene salvata in forma anonima su Google Cloud Firestore perché il link corto continui a funzionare; non viene allegato nulla d'altro. Vedi [PRIVACY_POLICY.html](PRIVACY_POLICY.html).
 
 <p align="center">
   <img src="screenshots/guide/share_qr_sheet.png" alt="Pannello di condivisione con QR" width="260"/>
@@ -259,7 +260,7 @@ Voti e proposte sono salvati in forma anonima su Firebase e richiedono il consen
 - Tutti i tuoi workout, le sessioni e i dati del profilo sono salvati **solo sul tuo dispositivo**.
 - Il GPS è usato **solo durante gli allenamenti attivi**, mai salvato come percorso e mai inviato a nessuno.
 - Statistiche anonime **opzionali** (eventi d'uso + crash report) vengono inviate a Firebase **solo se dai il consenso** (un dialog appare al primo avvio; puoi cambiarlo in qualsiasi momento in Settings → Privacy). Nessun dato personale viene raccolto.
-- Policy completa: [PRIVACY_POLICY.md](PRIVACY_POLICY.md)
+- Policy completa: [PRIVACY_POLICY.html](PRIVACY_POLICY.html)
 
 ## 14. FAQ
 
