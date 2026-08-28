@@ -1,5 +1,7 @@
 ---
+permalink: /FAQ.md
 ---
+
 
 # Blocktomic — FAQ
 

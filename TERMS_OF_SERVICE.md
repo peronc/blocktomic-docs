@@ -1,5 +1,7 @@
 ---
+permalink: /TERMS_OF_SERVICE.md
 ---
+
 
 # Blocktomic Terms & Conditions
 
