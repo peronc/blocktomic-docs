@@ -1,3 +1,6 @@
+---
+---
+
 # Blocktomic Terms & Conditions
 
 _Last updated: August 23, 2026_

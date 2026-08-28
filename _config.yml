@@ -1,0 +1,3 @@
+# GitHub Pages (Jekyll) config
+# Rende i file .md della documentazione come HTML leggibile sul sito.
+markdown: kramdown

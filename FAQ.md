@@ -1,3 +1,6 @@
+---
+---
+
 # Blocktomic — FAQ
 
 > Frequently asked questions about Blocktomic.
