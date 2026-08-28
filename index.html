@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blocktomic — Offline-first Tabata &amp; HIIT timer, no account, GPS</title>
+<meta name="description" content="Blocktomic: an offline-first Tabata, HIIT and interval workout timer. No account required, per-interval GPS, fully customizable. Open it and train." />
+<link rel="icon" type="image/png" href="assets/banner_v8.png" />
+<style>
+  :root {
+    --bg: #0f0a12;
+    --bg-soft: #171024;
+    --card: #1e1530;
+    --border: #3a2449;
+    --text: #f6eefb;
+    --muted: #b39ac4;
+    --pink-1: #ff00aa;
+    --pink-2: #ff4fd8;
+    --pink-glow: rgba(255,0,170,.35);
+    --radius: 16px;
+    --maxw: 1120px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+  a { color: var(--pink-1); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ---- Nav ---- */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(15,10,18,.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .2px; color: var(--text); }
+  .brand img { height: 36px; border-radius: 8px; }
+  .nav-links { display: flex; gap: 24px; align-items: center; }
+  .nav-links a { color: var(--muted); font-size: .95rem; }
+  .nav-links a:hover { color: var(--text); text-decoration: none; }
+  .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--pink-1), var(--pink-2));
+    color: #fff !important;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: .95rem;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--pink-glow); text-decoration: none; }
+  .btn-outline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text) !important;
+  }
+  .btn-outline:hover { border-color: var(--pink-1); box-shadow: none; }
+
+  /* ---- Hero ---- */
+  header.hero { padding: 80px 0 60px; text-align: center; }
+  .hero .badge {
+    display: inline-block;
+    background: rgba(255,0,170,.14);
+    color: var(--pink-2);
+    border: 1px solid rgba(255,0,170,.35);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: .82rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; letter-spacing: -.5px; }
+  .hero h1 span { background: linear-gradient(135deg, var(--pink-1), var(--pink-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero p.lead {
+    max-width: 640px;
+    margin: 20px auto 32px;
+    font-size: 1.15rem;
+    color: var(--muted);
+  }
+  .hero-cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .hero .stores { margin-top: 26px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .store-chip {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--card); border: 1px solid var(--border);
+    padding: 10px 16px; border-radius: 12px; font-size: .9rem; color: var(--text);
+  }
+  .store-chip:hover { border-color: var(--pink-1); text-decoration: none; }
+
+  /* ---- Banner ---- */
+  .banner { text-align: center; padding: 10px 0 40px; }
+  .banner img { max-width: 100%; border-radius: var(--radius); border: 1px solid var(--border); }
+
+  /* ---- Sections ---- */
+  section { padding: 56px 0; }
+  section h2 { font-size: 1.7rem; font-weight: 700; letter-spacing: -.3px; margin-bottom: 12px; }
+  section .sub { color: var(--muted); max-width: 620px; margin-bottom: 36px; }
+  .center { text-align: center; }
+  .center .sub { margin-left: auto; margin-right: auto; }
+
+  /* ---- Features ---- */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: transform .12s ease, border-color .12s ease;
+  }
+  .card:hover { transform: translateY(-3px); border-color: var(--pink-1); }
+  .card .icon {
+    width: 44px; height: 44px; border-radius: 11px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem; margin-bottom: 16px;
+    background: rgba(255,0,170,.16);
+  }
+  .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: .92rem; }
+
+  /* ---- Screenshots ---- */
+  .shots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .shot img {
+    width: 100%; border-radius: 12px; border: 1px solid var(--border);
+    transition: transform .15s ease;
+  }
+  .shot img:hover { transform: scale(1.03); }
+
+  /* ---- Stats ---- */
+  .stats { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 8px; }
+  .stat { text-align: center; }
+  .stat .num { font-size: 2rem; font-weight: 800; color: var(--pink-1); }
+  .stat .label { color: var(--muted); font-size: .88rem; }
+
+  /* ---- CTA ---- */
+  .cta-band {
+    text-align: center; margin: 40px 0 60px;
+    padding: 48px 24px; border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: radial-gradient(800px 200px at 50% 0%, rgba(255,0,170,.20), transparent);
+  }
+  .cta-band h2 { margin-bottom: 10px; }
+  .cta-band p { color: var(--muted); max-width: 560px; margin: 0 auto 26px; }
+
+  /* ---- Footer ---- */
+  footer { border-top: 1px solid var(--border); padding: 40px 0 56px; color: var(--muted); font-size: .9rem; }
+  footer .wrap { display: flex; flex-direction: column; gap: 16px; }
+  .footer-grid { display: flex; gap: 40px; flex-wrap: wrap; }
+  .footer-grid h4 { color: var(--text); font-size: .92rem; margin-bottom: 10px; }
+  .footer-grid ul { list-style: none; }
+  .footer-grid li { margin-bottom: 8px; }
+  .footer-grid a { color: var(--muted); }
+  .footer-grid a:hover { color: var(--text); }
+  .footer-bottom { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--border); padding-top: 20px; }
+
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+    section { padding: 40px 0; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/banner_v8.png" alt="Blocktomic logo" />
+      <span>Blocktomic</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#stats">Highlights</a>
+      <a href="#docs">Docs</a>
+      <a href="#download" class="btn">Download</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Offline-first · No account · Per-interval GPS</span>
+    <h1>Your <span>Tabata &amp; HIIT</span> timer, simply.</h1>
+    <p class="lead">
+      Open it and train. No account, no friction: customize your workouts, follow
+      the timer and the GPS, and track your progress — even fully offline.
+    </p>
+    <div class="hero-cta">
+      <a href="#download" class="btn">Get it on Google Play</a>
+      <a href="USER_GUIDE.md" class="btn btn-outline">User guide</a>
+    </div>
+    <div class="stores">
+      <span class="store-chip">✓ Offline</span>
+      <span class="store-chip">✓ 10 languages</span>
+      <span class="store-chip">✓ No account</span>
+      <span class="store-chip">✓ GPS</span>
+    </div>
+  </div>
+</header>
+
+<div class="banner">
+  <div class="wrap">
+    <img src="assets/banner_v8.png" alt="Blocktomic — Tabata & HIIT timer" />
+  </div>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <h2 class="center">Why Blocktomic</h2>
+    <p class="sub center">
+      Everything serious athletes need, without the clutter or an aggressive paywall.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">📴</div>
+        <h3>Offline-first</h3>
+        <p>No account and no connection required: your data stays only on your device. Privacy by default.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🗺️</div>
+        <h3>Per-interval GPS</h3>
+        <p>Track distance and speed for every work block: running, cycling, swimming and more, with drift-resilient tracking.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🌈</div>
+        <h3>Full customization</h3>
+        <p>4 visual styles × 9 accents (36 combinations) and colors that follow your device theme. A neon pink dark mode, too.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⏱️</div>
+        <h3>Anti-drift timer</h3>
+        <p>Extra precision, start/end beeps and alerts even with the app in the background, thanks to a foreground service.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📤</div>
+        <h3>Share &amp; import</h3>
+        <p>Build a workout, share it with a short link or a QR code and import it in one tap. Even on your favorite social apps.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏅</div>
+        <h3>Progress &amp; badges</h3>
+        <p>Session history, streaks and badges to keep you consistent and motivated along the way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="screenshots" class="bg-soft">
+  <div class="wrap">
+    <h2 class="center">A look inside</h2>
+    <p class="sub center">
+      From your library to the workout, right up to stats and badges.
+    </p>
+    <div class="shots">
+      <div class="shot"><img src="screenshots/play_store/01_workout_library.png" alt="Workout library" /></div>
+      <div class="shot"><img src="screenshots/play_store/02_workout_editor.png" alt="Workout editor" /></div>
+      <div class="shot"><img src="screenshots/play_store/03_timer_running.png" alt="Timer running" /></div>
+      <div class="shot"><img src="screenshots/play_store/04_gps_tracking.png" alt="GPS tracking" /></div>
+      <div class="shot"><img src="screenshots/play_store/05_progress_badges.png" alt="Progress and badges" /></div>
+      <div class="shot"><img src="screenshots/play_store/06_settings_personalization.png" alt="Personalization" /></div>
+      <div class="shot"><img src="screenshots/play_store/07_support_screen.png" alt="Support" /></div>
+      <div class="shot"><img src="screenshots/play_store/08_completed_workout.png" alt="Completed workout" /></div>
+    </div>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="wrap center">
+    <h2>Built to help you train, not stand in your way</h2>
+    <p class="sub center">
+      A simple, private app for people who want to focus on the training itself.
+    </p>
+    <div class="stats">
+      <div class="stat"><div class="num">10</div><div class="label">Languages</div></div>
+      <div class="stat"><div class="num">36</div><div class="label">Visual combinations</div></div>
+      <div class="stat"><div class="num">1</div><div class="label">Account (none)</div></div>
+      <div class="stat"><div class="num">100%</div><div class="label">Offline-ready</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="cta-band">
+  <div class="wrap">
+    <h2>Ready to get started?</h2>
+    <p>Download Blocktomic and make every workout simpler, more private and more fun. It's free, no account required and no intrusive ads.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.ramyralabs.blocktomic" class="btn">Get it on Google Play</a>
+  </div>
+</section>
+
+<footer id="docs">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Documentation</h4>
+        <ul>
+          <li><a href="USER_GUIDE.md">User guide (EN)</a></li>
+          <li><a href="USER_GUIDE.it.md">User guide (IT)</a></li>
+          <li><a href="WORKOUT_GUIDE.md">Workout guide</a></li>
+          <li><a href="FEATURES_GUIDE.md">Features</a></li>
+          <li><a href="FAQ.md">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="PRIVACY_POLICY.md">Privacy Policy</a></li>
+          <li><a href="TERMS_OF_SERVICE.md">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:blocktomic@gmail.com">blocktomic@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Blocktomic · Ramyra Labs</span>
+      <span>Offline-first workout timer</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

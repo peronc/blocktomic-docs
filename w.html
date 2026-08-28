@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blocktomic — Importa l'allenamento</title>
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Blocktomic — Importa un allenamento">
+  <meta property="og:description" content="Timer Tabata/HIIT offline-first. Apri il link per importare l'allenamento condiviso.">
+  <meta property="og:type" content="website">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f1115;
+      color: #e8eaed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .card {
+      text-align: center;
+      padding: 32px 24px;
+      max-width: 360px;
+    }
+    .logo {
+      font-size: 42px;
+    }
+    h1 { font-size: 20px; margin: 16px 0 8px; }
+    p { font-size: 14px; color: #9aa0a6; margin: 0 0 24px; line-height: 1.5; }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #4c8bf5, #7b5cf0);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .note { margin-top: 20px; font-size: 12px; color: #6b7280; }
+    .spinner {
+      width: 28px; height: 28px;
+      border: 3px solid #2a2e37;
+      border-top-color: #4c8bf5;
+      border-radius: 50%;
+      margin: 0 auto;
+      animation: spin 0.9s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #fallback { display: none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">💪</div>
+    <h1 id="opening">Apertura di Blocktomic…</h1>
+    <div id="loading" class="spinner" style="margin-top:24px;"></div>
+    <div id="fallback">
+      <p>Se l'app non si è aperta, installa Blocktomic dal Play Store e riprova.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.ramyralabs.blocktomic"
+         rel="noopener">Scarica Blocktomic</a>
+      <p class="note">Timer Tabata/HIIT offline-first, senza account.</p>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+
+      function invalid() {
+        document.getElementById('opening').textContent = 'Link non valido';
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('fallback').style.display = 'block';
+      }
+
+      // Redirect allo scheme custom dell'app. Su Android viene mostrato il
+      // selettore delle app; se Blocktomic è installata, si apre subito.
+      function openApp(payload) {
+        window.location.replace(
+          'blocktomic://import?d=' + encodeURIComponent(payload));
+
+        // Se l'app non risponde entro 1,5 s, mostra il fallback allo store.
+        setTimeout(function () {
+          document.getElementById('loading').style.display = 'none';
+          document.getElementById('fallback').style.display = 'block';
+        }, 1500);
+      }
+
+      // Formato compatto: l'id identifica un documento Firestore che contiene
+      // il payload compresso (`?id=`). Lettura via REST API, senza SDK.
+      function openFromId(id) {
+        fetch(
+          'https://firestore.googleapis.com/v1/projects/blocktomic/databases/(default)/documents/shared_workouts/' +
+          encodeURIComponent(id))
+          .then(function (res) {
+            if (!res.ok) throw new Error('http ' + res.status);
+            return res.json();
+          })
+          .then(function (doc) {
+            var payload = doc && doc.fields && doc.fields.v &&
+              doc.fields.v.stringValue;
+            if (!payload) throw new Error('payload mancante');
+            openApp(payload);
+          })
+          .catch(invalid);
+      }
+
+      // Formato classico: payload completo nell'URL (`?d=`).
+      var d = params.get('d');
+      if (d) {
+        openApp(d);
+        return;
+      }
+
+      var id = params.get('id');
+      if (id) {
+        openFromId(id);
+        return;
+      }
+
+      invalid();
+    })();
+  </script>
+</body>
+</html>
