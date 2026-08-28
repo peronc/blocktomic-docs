@@ -1,5 +1,7 @@
 ---
+permalink: /USER_GUIDE.it.md
 ---
+
 
 # Blocktomic — Guida per l'utente
 

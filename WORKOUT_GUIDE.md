@@ -1,5 +1,7 @@
 ---
+permalink: /WORKOUT_GUIDE.md
 ---
+
 
 # Blocktomic — Workout & Timer Guide
 

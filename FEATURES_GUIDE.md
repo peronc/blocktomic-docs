@@ -1,5 +1,7 @@
 ---
+permalink: /FEATURES_GUIDE.md
 ---
+
 
 # Blocktomic — Features Guide
 

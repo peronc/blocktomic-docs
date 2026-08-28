@@ -1,5 +1,7 @@
 ---
+permalink: /screenshots/README.md
 ---
+
 
 # Blocktomic — Screenshots
 

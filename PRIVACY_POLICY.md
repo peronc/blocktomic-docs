@@ -1,5 +1,7 @@
 ---
+permalink: /PRIVACY_POLICY.md
 ---
+
 
 # Privacy Policy for Blocktomic
 
