@@ -1,3 +1,6 @@
+---
+---
+
 # Blocktomic — Features Guide
 
 > Deep dive into progress tracking, gamification, personalization, and more.

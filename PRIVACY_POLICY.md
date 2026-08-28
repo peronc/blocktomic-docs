@@ -1,3 +1,6 @@
+---
+---
+
 # Privacy Policy for Blocktomic
 
 **Last updated: August 23, 2026**
