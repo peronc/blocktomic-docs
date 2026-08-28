@@ -1,5 +1,6 @@
 ---
-permalink: /screenshots/README.md
+layout: default
+title: Screenshots
 ---
 
 

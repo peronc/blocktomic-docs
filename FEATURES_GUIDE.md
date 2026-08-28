@@ -1,5 +1,6 @@
 ---
-permalink: /FEATURES_GUIDE.md
+layout: default
+title: Features
 ---
 
 

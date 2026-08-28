@@ -1,5 +1,6 @@
 ---
-permalink: /WORKOUT_GUIDE.md
+layout: default
+title: Workout Guide
 ---
 
 

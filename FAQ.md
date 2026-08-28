@@ -1,5 +1,6 @@
 ---
-permalink: /FAQ.md
+layout: default
+title: FAQ
 ---
 
 
@@ -196,4 +197,4 @@ Open the Feedback & Ideas screen in the Support tab. Vote on existing ideas or s
 - **Email**: blocktomic@gmail.com
 - **Developer**: Carlo Peron
 - **Documentation**: https://peronc.github.io/blocktomic-docs
-- **Privacy Policy**: https://peronc.github.io/blocktomic-docs/PRIVACY_POLICY.md
+- **Privacy Policy**: https://peronc.github.io/blocktomic-docs/PRIVACY_POLICY.html

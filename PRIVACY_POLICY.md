@@ -1,5 +1,6 @@
 ---
-permalink: /PRIVACY_POLICY.md
+layout: default
+title: Privacy Policy
 ---
 
 

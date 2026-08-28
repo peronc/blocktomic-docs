@@ -1,5 +1,6 @@
 ---
-permalink: /README.md
+layout: default
+title: Documentation index
 ---
 
 
@@ -30,10 +31,10 @@ landing page ([index.html](index.html)).
 | Document | Description |
 |---|---|
 | [index.html](index.html) | Landing page (marketing) |
-| [USER_GUIDE.md](USER_GUIDE.md) | User guide (English) |
-| [USER_GUIDE.it.md](USER_GUIDE.it.md) | Guida per l'utente (italiano) |
-| [FAQ.md](FAQ.md) | Frequently Asked Questions |
-| [WORKOUT_GUIDE.md](WORKOUT_GUIDE.md) | Workout catalog & reference |
-| [FEATURES_GUIDE.md](FEATURES_GUIDE.md) | Features deep dive |
-| [PRIVACY_POLICY.md](PRIVACY_POLICY.md) | Privacy Policy |
-| [TERMS_OF_SERVICE.md](TERMS_OF_SERVICE.md) | Terms of Service |
+| [USER_GUIDE.html](USER_GUIDE.html) | User guide (English) |
+| [USER_GUIDE.it.html](USER_GUIDE.it.html) | Guida per l'utente (italiano) |
+| [FAQ.html](FAQ.html) | Frequently Asked Questions |
+| [WORKOUT_GUIDE.html](WORKOUT_GUIDE.html) | Workout catalog & reference |
+| [FEATURES_GUIDE.html](FEATURES_GUIDE.html) | Features deep dive |
+| [PRIVACY_POLICY.html](PRIVACY_POLICY.html) | Privacy Policy |
+| [TERMS_OF_SERVICE.html](TERMS_OF_SERVICE.html) | Terms of Service |
