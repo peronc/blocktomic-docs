@@ -28,7 +28,7 @@ Yes. 100% offline. Your data stays on your device. Internet is only needed for o
 Not yet. Blocktomic is currently Android-only. iOS support is planned for a future release.
 
 ### What languages are supported?
-English, Italian, Spanish, French, German, Portuguese, Japanese, Korean, Chinese, and Hindi. The app follows your system language by default, but you can change it in Settings.
+English, Italian, Spanish, French, German, Portuguese, Brazilian Portuguese, Japanese, Korean, Chinese, and Hindi. The app follows your system language by default, but you can change it in Settings.
 
 ---
 
@@ -72,7 +72,7 @@ Go to Workouts > My Workouts, tap the + button. Add blocks (intervals) with the 
 - **Open-ended**: stopwatch-style, complete when you're ready.
 
 ### What activities are available?
-Over 100 activities across 6 families: Endurance, HIIT, Gym, Calisthenics, Flexibility, and Other. Includes running, cycling, bench press, squats, pull-ups, burpees, stretching, and more.
+Over 128 activities across 6 families: Endurance, HIIT, Gym, Calisthenics, Flexibility, and Other. Includes running, cycling, bench press, squats, pull-ups, burpees, stretching, and more.
 
 ### Can I use Blocktomic for gym workouts?
 Yes. Create reps-based blocks with target weight, sets, and rest between sets. Track your progress for each exercise.

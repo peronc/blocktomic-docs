@@ -100,7 +100,7 @@ During the workout:
 
 ## Activities
 
-Each block is linked to an activity from Blocktomic's catalog of 100+ activities. Activities are organized by **sport family**:
+Each block is linked to an activity from Blocktomic's catalog of **128 activities**. Activities are organized by **sport family**:
 
 | Family | Examples |
 |---|---|
@@ -289,16 +289,16 @@ When you finish (or stop) a workout:
 
 ## Pre-built Workouts
 
-Blocktomic ships with **40 ready-to-use workouts** across every family:
+Blocktomic ships with **44 ready-to-use workouts** across every family:
 
 | Family | Count | Highlights |
 |---|---|---|
-| HIIT | 11 | Classic Tabata, HIIT 30/30, Pyramid 60/30, HIIT Total Burn, EMOM 20min, AMRAP 15min, Deck of Cards, Partner WOD |
-| Gym | 10 | Strength 45/15, Full Body Circuits A/B, Upper Body Push/Pull, Lower Body Quads/Posterior Chain |
+| HIIT | 11 | Classic Tabata, HIIT 30/30, Pyramid 60/30, HIIT Total Burn, HIIT Lower Burn, HIIT Core Cardio, HIIT Explosive, HIIT Sprint, Core Cardio HIIT, AMRAP 15min, Deck of Cards |
+| Gym | 10 | Strength 45/15, Full Body Circuits A/B, Upper Body Push/Pull, Lower Body Quads/Posterior Chain, Away Body A/B/C |
 | Endurance | 5 | Run with Repeats, Fartlek Pyramid, Hill Repeats, Tempo Run, Long Run |
-| Calisthenics | 4 | Push, Pull, Core, Skills |
-| Flexibility | 3 | Mobility Flow, Yoga Flow, Foam Rolling |
-| Other | 7 | Core Circuit, Core Finisher, Plank Variations, Active Recovery, Pomodoro Timer |
+| Calisthenics | 5 | Push, Pull, Core, Skills, Beginner Base |
+| Flexibility | 5 | Mobility Flow, Yoga Flow, Foam Rolling, Back Health Quick, Back Health Mobility |
+| Other | 8 | Pomodoro Timer, Core Circuit, Plank Variations, Core Finisher, Active Recovery, EMOM 20min, Partner WOD, Bodyweight Strength Basics |
 
 Each pre-built workout has a difficulty rating (*Easy / Intermediate / Hard / Beast*) and — where applicable — a catchy title you'll see on cards when fun names are on (e.g. *Classic Tabata* → *Phoenix Protocol*).
 
