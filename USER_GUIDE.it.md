@@ -18,8 +18,8 @@ i tuoi workout, le sessioni e il profilo sono salvati solo sul tuo dispositivo.
 
 1. Apri Blocktomic → l'**onboarding** appare al primo avvio:
 
-   - **Benvenuto** — una breve introduzione all'app.
-   - **Preferenze** — scegli la famiglia di attività preferita, le unità di distanza/peso e il colore accent (Cyan di default, più quattro tonalità Neon).
+   - **Benvenuto** — una breve introduzione all'app, più un selettore di colore accent (cinque tonalità Neon; altre sono disponibili più avanti nelle Impostazioni).
+   - **Preferenze** — scegli la famiglia di attività preferita, le unità di distanza/peso e decidi se attivare le **notifiche di retention** (promemoria delicati per allenarti — attive di default).
    - **Suggerimenti** — scegli lo **stile dei nomi** (*Spiritosi* o *Normali*) con anteprima dal vivo su card reali e, se vuoi, avvia subito un allenamento.
 
    Tocca **Salta** per andare dritto alla schermata **Home**.
@@ -39,19 +39,24 @@ Ecco fatto: un allenamento parte in due tocchi, senza account.
 
 ## 2. Home
 
-La schermata **Home** è il nuovo punto d'ingresso. Mostra:
+La schermata **Home** è il tuo nuovo punto d'ingresso. Mostra:
 
-- **Allenati ora** → avvia l'ultimo o il workout consigliato subito.
-- **Continua l'ultima** → ripete l'ultimo workout completato.
-- **Consigliato oggi** → un suggerimento giornaliero deterministico filtrato per la tua famiglia preferita.
-- **Chip streak** (in alto a destra) → mostra lo streak corrente se > 0.
+- **Saluto** — un saluto personalizzato se hai impostato il tuo nome.
+- **Striscia Obiettivo (Goal strip)** — una fila orizzontale di tasselli obiettivo selezionabili (*Perdita grasso*, *Forza e muscoli*, *Resistenza*, *Mobilità e postura*) più un tassello "Nessun obiettivo". Tocca per selezionare un obiettivo; tocca di nuovo quello selezionato (o tieni premuto) per aprire il dettaglio.
+- **Striscia Focus** — *ChoiceChip* orizzontali per *Corpo intero*, *Braccia e spalle*, *Core*, *Gambe*, *Glutei* e *Schiena*. Tocca per attivare/disattivare. Quando un focus è selezionato compare un pulsante **"Workout: <focus>"** per saltare a una libreria filtrata.
+- **Card workout principale** — una card con gradiente con il workout consigliato, guidato dal tuo obiettivo/focus selezionato (o dal suggerimento del giorno). Toccala per avviarla.
+- **Continua l'ultima** — ripete l'ultimo workout completato (mostrata solo se è diverso da quello consigliato).
+- **Muscolo top** — mostra il muscolo che hai allenato di più negli ultimi 7 giorni; tocca per aprire la schermata dei trend (solo se hai dati recenti).
+
+Le tue selezioni di obiettivo e focus servono a consigliare i workout e a pre-filtrare la libreria.
 
 <p align="center">
-  <img src="screenshots/guide/home_screen.jpg" alt="Home con azioni rapide" width="260"/>
+  <img src="screenshots/guide/home_screen.jpg" alt="Home con obiettivi, focus e azioni rapide" width="260"/>
 </p>
 
 Icone nella barra superiore:
 - **Avatar** → apre il Profilo.
+- **Chip streak** (se attivo) → mostra lo streak corrente.
 - **Ingranaggio** → apre le Impostazioni (non più una scheda in basso).
 
 ## 3. Le schede principali
@@ -60,9 +65,9 @@ La barra di navigazione in basso ha 4 schede:
 
 | Scheda | Cosa fa |
 |---|---|
-| **Home** | Azioni rapide: Allenati ora / Continua l'ultima / Consigliato oggi |
+| **Home** | Obiettivi, focus, workout consigliato/primario e azioni rapide |
 | **Workouts** | La tua libreria: recenti, personalizzati e predefiniti |
-| **Progress** | Streak, badge, totali, grafico andamento e heatmap |
+| **Progress** | Streak, badge, totali, grafico andamento, heatmap e distribuzione muscoli |
 | **Supporter** | Supporto opzionale allo sviluppo (guarda ad o donazione) |
 
 Le Impostazioni non sono più una scheda in basso; si aprono tramite l'**icona ingranaggio** in alto a destra nella Home.
@@ -71,11 +76,23 @@ Le Impostazioni non sono più una scheda in basso; si aprono tramite l'**icona i
 
 ## 4. La libreria
 
-La scheda **Workouts** è divisa in tre sezioni:
+La scheda **Workouts** ha due sotto-schede: **Recent** e **Workouts**.
 
-- **Recent** — i workout che hai usato più di recente, più un riepilogo "Come è andata" delle ultime sessioni. Le sessioni interrotte compaiono qui pure (purché abbiano almeno un blocco registrato), con una ✕ rossa al posto del ✓ verde.
-- **My Workouts** — i workout che hai creato, duplicato o importato.
-- **Pre-built Workouts** — i workout pronti inclusi nell'app.
+- **Recent** — i workout che hai usato più di recente, raggruppati con un riepilogo "Come è andata" delle ultime sessioni. Ogni card si espande per mostrare fino a tre sessioni recenti. Le sessioni interrotte compaiono qui pure (purché abbiano almeno un blocco registrato), con una ✕ rossa al posto del ✓ verde.
+- **Workouts** — tutti i tuoi workout (personalizzati e predefiniti), con un pannello **filtri** espandibile sopra l'elenco.
+
+Il pannello **filtri** ti permette di restringere l'elenco per:
+
+- **Tipo** — Tutti, Obiettivo (corrisponde all'obiettivo corrente), Predefiniti o Personalizzati.
+- **Focus** — Tutti, oppure un'area specifica (Corpo intero, Braccia e spalle, Core, Gambe, Glutei, Schiena).
+- **Famiglia** — Endurance, HIIT, Gym, Calisthenics, Flexibility o Other.
+- **Nuovi** — un interruttore per mostrare solo i workout predefiniti appena distribuiti.
+
+Un contatore nell'intestazione dei filtri mostra quanti workout corrispondono. I workout personalizzati sono ordinati per frequenza d'uso (i più usati per primi).
+
+<p align="center">
+  <img src="screenshots/guide/library_filters.png" alt="Libreria con tab Recent/Workouts e pannello filtri" width="260"/>
+</p>
 
 **Avvio di un allenamento**: tocca la card. Dalla schermata di anteprima di un workout puoi anche toccare il **pulsante play** per avviarlo subito. La fiammella 🔥 su una card indica che hai usato quel workout almeno 3 volte.
 
@@ -91,9 +108,7 @@ La scheda **Workouts** è divisa in tre sezioni:
 
 **Difficoltà**: ogni card predefinita mostra una chip di difficoltà — *Facile*, *Intermedio*, *Difficile* o *Bestia*.
 
-**Filtri**: nelle sezioni *My Workouts* e *Pre-built*, le chip sopra l'elenco filtrano per famiglia di workout (Endurance, HIIT, Gym, Calisthenics, Flexibility, Other).
-
-**Nuovi workout disponibili**: quando arrivano nuovi workout predefiniti, un banner appare nella sezione Pre-built. Chiudilo quando li hai visti.
+**Nuovi workout disponibili**: quando arrivano nuovi workout predefiniti, un banner appare in cima alla scheda Workouts. Toccalo per filtrare sui nuovi, oppure chiudilo quando li hai visti.
 
 ## 5. Durante un workout
 
@@ -147,7 +162,7 @@ La **famiglia** del workout (Endurance, HIIT, …) viene derivata automaticament
 
 Apri la **gestione attività** dall'icona nella barra della libreria (icona categorie).
 
-- Sfoglia il catalogo di default (100+ attività) con ricerca e filtri per famiglia.
+- Sfoglia il catalogo di default (128 attività) con ricerca e filtri per famiglia.
 - **Aggiungi un'attività tua**: dagli un nome, scegli un'icona, decidi se supporta distanza/GPS, scegli le famiglie e un colore.
 - Le **attività di default** sono bloccate (per affidabilità); le attività **che crei tu** possono essere rinominate o eliminate in qualsiasi momento.
 - Quando arrivano nuove attività distribuite all'app, compare un banner qui.
@@ -176,11 +191,16 @@ Chi apre il link (o inquadra il QR) vede un'anteprima → **"Add to my library"*
 
 - **Profilo** (da Impostazioni, tocca la tua card): foto, nome, peso, altezza e data di nascita. Il peso segue l'unità scelta (kg/lb).
 - Scheda **Progress**:
-  - **Streak** — giorni consecutivi di allenamento, più il record personale.
+  - **Streak** — giorni consecutivi di allenamento, più il record personale (mostrato come grande card con gradiente quando attivo).
   - **Badge** — collezione di obiettivi (primo workout, streak, volume, qualità, esplorazione, traguardi, supporter). Tocca un badge per vedere come sbloccarlo.
   - **Totali** — workout completati e minuti totali.
+  - **Distribuzione muscoli** — i muscoli che hai allenato di più (top 3) negli ultimi 30 giorni; tocca per aprire la schermata dei trend.
   - **Trend** — grafico dell'allenamento nel tempo (vedi sotto).
   - **Heatmap** — calendario della tua attività; tocca un giorno per vedere le sessioni di quel giorno.
+
+<p align="center">
+  <img src="screenshots/guide/progress_muscles.png" alt="Progress con serie, badge e distribuzione muscoli" width="260"/>
+</p>
 
 ### Trend
 
@@ -225,16 +245,18 @@ Il badge appare anche nella tua collezione. Un leggero promemoria settimanale vi
 
 | Sezione | Cosa puoi cambiare |
 |---|---|
-| **Audio** | Suoni on/off; beep on/off |
+| **Audio** | Suoni on/off |
 | **Vibration** | Vibrazione on/off |
 | **Units** | Distanza (km/mi) e peso (kg/lb) — solo visualizzazione |
-| **Attività preferita** | La famiglia che preferisci (Endurance, HIIT, Gym…); alimenta il suggerimento *Consigliato oggi* della Home |
+| **Attività preferita** | La famiglia che preferisci (Endurance, HIIT, Gym…) o nessuna; alimenta i suggerimenti dei workout in Home |
 | **Start delay** | Countdown prima dell'avvio del timer (0–15 s) |
-| **Language** | Lingua di sistema o una delle 10 lingue |
-| **Appearance** | Tema (system/light/dark), colore accento (Ciano di default, più Verde, Arancione, Viola, Fucsia e le sfumature Rosso/Rosa/Lime/Blu neon), toggle rotazione schermo, stile visivo (Athletic di default, più Classic, Vibrant, Overdrive) |
-| **Nomi divertenti** | Mostra i titoli spiritosi sulle card dei workout (attivi di default) |
-| **Screen rotation** | Disattivata di default (portrait). Attivala per permettere la rotazione dello schermo |
+| **Language** | Lingua di sistema o una delle 11 lingue |
+| **Tema** | Modalità tema (system/light/dark), colore accento (Ciano di default, più Verde e le sfumature Rosso/Rosa/Lime/Blu neon), toggle rotazione schermo |
+| **Stile** | Stile visivo (Athletic di default, più Classic, Vibrant, Overdrive) |
+| **Workout** | Nomi divertenti dei workout on/off (titoli spiritosi sulle card, attivi di default) |
 | **Privacy** | Toggle "Condividi dati anonimi di utilizzo" |
+| **Notifiche** | Notifiche di retention on/off (promemoria delicati per allenarti) |
+| **Informazioni** | Pagine Informazioni, Legale e Contattaci |
 
 <p align="center">
   <img src="screenshots/guide/settings_appearance.png" alt="Impostazioni – sezione aspetto con accent, stili e nomi divertenti" width="260"/>
@@ -244,7 +266,7 @@ Il badge appare anche nella tua collezione. Un leggero promemoria settimanale vi
   <img src="screenshots/guide/language_settings.png" alt="Impostazioni – lingua, accent, stili, nomi divertenti" width="260"/>
 </p>
 
-In cima alle Impostazioni trovi anche la **card del profilo** e il pulsante **Invita un amico** (invia un link per provare l'app con qualsiasi app). In fondo: le pagine **Informazioni**, **Legale** e **Contattaci**.
+In cima alle Impostazioni trovi anche il pulsante **Invita un amico** (invia un link per provare l'app con qualsiasi app) e la **card del profilo** (foto, nome, peso e altezza — tocca per modificare, inclusa la data di nascita). In fondo: le pagine **Informazioni**, **Legale** e **Contattaci** e la versione dell'app.
 
 ## 12. Feedback e idee
 

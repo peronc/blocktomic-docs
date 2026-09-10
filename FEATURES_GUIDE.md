@@ -23,6 +23,7 @@ The Progress tab gives you an overview of your training:
 - **Total workouts**: lifetime count of completed sessions.
 - **Training minutes**: total minutes spent training.
 - **Badges**: latest unlocked badge displayed prominently.
+- **Muscle distribution**: your most-worked muscles (top 3) over the last 30 days, with a link to the trend screen.
 
 ### Calendar Heatmap
 A visual calendar shows your training days:
@@ -223,6 +224,39 @@ If your Supporter badge is expired:
 - A weekly notification appears every Monday at 10:00 AM.
 - Tapping the notification opens the Support tab.
 - You can turn off reminder notifications in device settings.
+
+### Coming Soon
+
+The Support tab also lists planned features coming to the app (marked with a lock until they ship):
+
+- **Cloud Backup** — back up and restore your data across devices.
+- **Pro Mode** — a premium tier with extra features.
+- **Custom Sounds** — choose your own workout sounds.
+- **Duplicate Prebuilt** — duplicate any pre-built workout with one tap.
+- **Form Coach** — guidance on exercise form.
+
+---
+
+## Goals & Focus
+
+The **Home** screen personalizes your experience with two selectable areas:
+
+### Goals
+
+A horizontal strip of goal tiles — *Fat loss*, *Strength & muscle*, *Endurance* and *Mobility & posture* — plus a "No goal" option. Selecting a goal:
+
+- Filters and prioritizes the workouts recommended on Home.
+- Pre-filters the library (a "Goal" type filter in the Workouts tab).
+- Opens a goal detail screen when you tap the selected goal again or long-press it.
+
+### Focus
+
+A strip of focus *ChoiceChips* — *Full body*, *Arms & shoulders*, *Core*, *Legs*, *Glutes* and *Back*. Selecting a focus:
+
+- Adds a filtered "Workouts: <focus>" button that jumps straight to a filtered library.
+- Combines with a goal to refine recommendations.
+
+Goal and focus selections are stored locally and used only for recommendations and filtering.
 
 ---
 

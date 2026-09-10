@@ -18,8 +18,8 @@ workouts, sessions and profile are stored locally on your device.
 
 1. Open Blocktomic → the **onboarding** appears on first launch:
 
-   - **Welcome** — a quick intro to the app.
-   - **Preferences** — pick your preferred activity family, distance/weight units, and an accent color (Cyan by default, plus four Neon shades).
+   - **Welcome** — a quick intro to the app, plus an accent color picker (five Neon shades; more are available later in Settings).
+   - **Preferences** — pick your preferred activity family, distance/weight units, and decide whether to enable **retention notifications** (gentle reminders to train — on by default).
    - **Suggestions** — choose your **name style** (*Catchy* or *Classic*) with a live preview on real workout cards, and start one right away if you like.
 
    Tap **Skip** to go straight to the **Home** screen.
@@ -39,19 +39,24 @@ That's it — a workout starts in two taps, no account needed.
 
 ## 2. Home
 
-The **Home** screen is the new entry point. It shows:
+The **Home** screen is your new entry point. It shows:
 
-- **Train now** → starts the last or recommended workout immediately.
-- **Continue last** → repeats your last completed workout.
-- **Recommended today** → a deterministic daily suggestion filtered by your preferred activity family.
-- **Streak chip** (top right) → shows your current streak when > 0.
+- **Greeting** — a personalized greeting if you've set your name.
+- **Goal strip** — a horizontal row of selectable goal tiles (*Fat loss*, *Strength & muscle*, *Endurance*, *Mobility & posture*) plus a "No goal" tile. Tap to select a goal; tap the selected goal again (or long-press) to open its detail screen.
+- **Focus strip** — horizontal *ChoiceChips* for *Full body*, *Arms & shoulders*, *Core*, *Legs*, *Glutes* and *Back*. Tap to toggle; tap again to deselect. When a focus is selected, a **"Workouts: <focus>"** button appears to jump straight to a filtered library.
+- **Primary workout card** — a gradient card with the recommended workout, driven by your selected goal/focus (or today's suggestion). Tap it to start.
+- **Continue last** — repeats your last completed workout (shown only when it differs from the recommended one).
+- **Top muscle** — shows the muscle you trained most in the last 7 days; tap to open the trend screen (only while you have recent data).
+
+Your goal and focus selections are used to recommend workouts and to pre-filter the library.
 
 <p align="center">
-  <img src="screenshots/guide/home_screen.jpg" alt="Home screen with quick actions" width="260"/>
+  <img src="screenshots/guide/home_screen.jpg" alt="Home screen with goals, focus and quick actions" width="260"/>
 </p>
 
 Top bar icons:
 - **Avatar** → opens Profile.
+- **Streak chip** (when active) → shows your current streak.
 - **Gear** → opens Settings (no longer a bottom tab).
 
 ## 3. The main tabs
@@ -60,9 +65,9 @@ The bottom navigation has 4 tabs:
 
 | Tab | What it does |
 |---|---|
-| **Home** | Quick actions: Train now / Continue last / Recommended today |
+| **Home** | Goals, focus areas, recommended/primary workout and quick actions |
 | **Workouts** | Your library: recent, custom and pre-built workouts |
-| **Progress** | Streaks, badges, totals, trend chart and heatmap |
+| **Progress** | Streaks, badges, totals, trend chart, heatmap and muscle distribution |
 | **Supporter** | Optional way to support development (watch ad or donate) |
 
 Settings is no longer a bottom tab; open it via the **gear icon** in the top bar on Home.
@@ -71,11 +76,23 @@ Settings is no longer a bottom tab; open it via the **gear icon** in the top bar
 
 ## 4. The library
 
-The **Workouts** tab is split into three sections:
+The **Workouts** tab has two sub-tabs: **Recent** and **Workouts**.
 
-- **Recent** — the workouts you used most recently, plus a "How it went" recap of your last sessions. Interrupted sessions appear here too (as long as at least one block was recorded), marked with a red ✕ instead of the green ✓.
-- **My Workouts** — the workouts you created, duplicated or imported.
-- **Pre-built Workouts** — ready-made workouts included with the app.
+- **Recent** — the workouts you used most recently, grouped with a "How it went" recap of your last sessions. Each card expands to show up to three recent sessions. Interrupted sessions appear here too (as long as at least one block was recorded), marked with a red ✕ instead of the green ✓.
+- **Workouts** — all your workouts (custom and pre-built), with an expandable **filters** panel above the list.
+
+The **filters** panel lets you narrow the list by:
+
+- **Type** — All, Goal (matches your current goal), Pre-built or Custom.
+- **Focus** — All, or a specific focus area (Full body, Arms & shoulders, Core, Legs, Glutes, Back).
+- **Family** — Endurance, HIIT, Gym, Calisthenics, Flexibility or Other.
+- **New** — a switch to show only newly distributed pre-built workouts.
+
+A counter in the filters header shows how many workouts match. Custom workouts are sorted by how often you use them (most used first).
+
+<p align="center">
+  <img src="screenshots/guide/library_filters.png" alt="Library with Recent/Workouts tabs and the filters panel" width="260"/>
+</p>
 
 **Starting a workout**: tap a card. From a workout's preview screen you can also tap the **play button** to start it right away. A 🔥 flame on a card means you used that workout at least 3 times.
 
@@ -91,9 +108,7 @@ The **Workouts** tab is split into three sections:
 
 **Difficulty**: every pre-built card shows a difficulty chip — *Easy*, *Intermediate*, *Hard* or *Beast*.
 
-**Filtering**: on *My Workouts* and *Pre-built*, the chips above the list filter by workout family (Endurance, HIIT, Gym, Calisthenics, Flexibility, Other).
-
-**New workouts available**: when new pre-built workouts are distributed to the app, a banner appears on the Pre-built tab. Dismiss it when you've seen them.
+**New workouts available**: when new pre-built workouts are distributed to the app, a banner appears at the top of the Workouts tab. Tap it to filter to the new ones, or dismiss it when you've seen them.
 
 ## 5. During a workout
 
@@ -147,7 +162,7 @@ The workout **family** (Endurance, HIIT, …) is derived automatically from its 
 
 Open the **activities manager** from the library app bar icon (categories icon).
 
-- Browse the default catalog (100+ activities) with search and family filters.
+- Browse the default catalog (128 activities) with search and family filters.
 - **Add your own** activity: give it a name, pick an icon, decide if it supports distance / GPS, choose its families and a color.
 - **Default activities** are locked (to keep the app reliable); activities **you create** can be renamed or deleted at any time.
 - When new activities are distributed to the app, a banner appears here.
@@ -176,11 +191,16 @@ Opening the link (or scanning the QR) shows a preview → **"Add to my library"*
 
 - **Profile** (from Settings, tap your card): photo, name, weight, height and birth date. Weight display follows the unit you chose (kg/lb).
 - **Progress** tab:
-  - **Streak** — consecutive days trained, plus your longest streak.
+  - **Streak** — consecutive days trained, plus your longest streak (shown as a big gradient card when active).
   - **Badges** — collection of achievements (first workout, streaks, volume, quality, exploration, milestone, supporter). Tap a badge to see how to unlock it.
   - **Totals** — workouts completed and total minutes.
+  - **Muscle distribution** — your most-worked muscles (top 3) over the last 30 days; tap to open the trend screen.
   - **Trend** — chart of your training over time (see below).
   - **Heatmap** — calendar view of your activity; tap a day to see that day's sessions.
+
+<p align="center">
+  <img src="screenshots/guide/progress_muscles.png" alt="Progress with streaks, badges and muscle distribution" width="260"/>
+</p>
 
 ### Trend
 
@@ -225,16 +245,18 @@ The badge also appears in your badge collection. A gentle weekly reminder is sho
 
 | Section | What you can change |
 |---|---|
-| **Audio** | Sounds on/off; beep on/off |
+| **Audio** | Sound on/off |
 | **Vibration** | Vibration on/off |
 | **Units** | Distance (km/mi) and weight (kg/lb) — display only |
-| **Preferred activity** | Your favourite family (Endurance, HIIT, Gym…); it drives the *Recommended today* suggestion on Home |
+| **Preferred activity** | Your favourite family (Endurance, HIIT, Gym…) or no preference; it drives the workout suggestions on Home |
 | **Start delay** | Countdown before the timer starts (0–15 s) |
-| **Language** | System default or one of 10 languages |
-| **Appearance** | Theme (system/light/dark), accent color (Cyan by default, plus Green, Orange, Violet, Fuchsia and the Neon Red/Pink/Lime/Blue shades), screen rotation toggle, visual style (Athletic by default, plus Classic, Vibrant, Overdrive) |
-| **Fun workout names** | Show catchy titles on workout cards (on by default) |
-| **Screen rotation** | Off by default (portrait). Turn it on to allow the screen to rotate with your device |
+| **Language** | System default or one of 11 languages |
+| **Theme** | Theme mode (system/light/dark), accent color (Cyan default, plus Green, and the Neon Red/Pink/Lime/Blue shades), screen rotation toggle |
+| **Style** | Visual style (Athletic default, plus Classic, Vibrant, Overdrive) |
+| **Workout** | Fun workout names on/off (catchy titles on cards, on by default) |
 | **Privacy** | "Share anonymous usage data" toggle |
+| **Notifications** | Retention notifications on/off (gentle reminders to train) |
+| **About** | About, Legal and Contact Us pages |
 
 <p align="center">
   <img src="screenshots/guide/settings_appearance.png" alt="Settings – appearance section with accents, styles and fun names" width="260"/>
@@ -244,7 +266,7 @@ The badge also appears in your badge collection. A gentle weekly reminder is sho
   <img src="screenshots/guide/language_settings.png" alt="Settings – language, accents, styles, fun names" width="260"/>
 </p>
 
-At the top of Settings you'll also find your **profile card** and an **Invite a friend** button (sends a download link with any app). At the bottom: **About**, **Legal** and **Contact Us** pages.
+At the top of Settings you'll also find an **Invite a friend** button (sends a download link with any app) and your **profile card** (photo, name, weight and height — tap to edit, including birth date). At the bottom: **About**, **Legal** and **Contact Us** pages and the app version.
 
 ## 12. Feedback & ideas
 
