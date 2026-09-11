@@ -92,7 +92,7 @@
       // il payload compresso (`?id=`). Lettura via REST API, senza SDK.
       function openFromId(id) {
         fetch(
-          'https://firestore.googleapis.com/v1/projects/blocktomic/databases/(default)/documents/shared_workouts/' +
+          'https://firestore.googleapis.com/v1/projects/blocktomic-prod/databases/(default)/documents/shared_workouts/' +
           encodeURIComponent(id))
           .then(function (res) {
             if (!res.ok) throw new Error('http ' + res.status);
