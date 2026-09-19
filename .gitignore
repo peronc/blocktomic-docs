@@ -1,0 +1,4 @@
+# Catture native degli screenshot: solo locali (output processati in play_store/)
+screenshots/play_store/raw/
+
+.DS_Store
