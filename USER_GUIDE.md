@@ -116,6 +116,7 @@ A counter in the filters header shows how many workouts match. Custom workouts a
 - **Pause / Resume** freezes the timer (GPS tracking also pauses).
 - **Stop** ends the session (always asks for confirmation); pressing **back** during a session asks for confirmation too.
 - **Beeps** and **vibration** signal phase changes — both can be turned off in Settings.
+- **Voice coach (optional, opt-in)** — when enabled in **Settings → Audio → Voice coach** (off by default), a short announcement plays between the `T-1` beep and the `GO` beep, e.g. `“Next: Burpees! 3, 2, 1, go go go!”`. With **Fun workout names on** (default, `Settings → Workout → Fun workout names`) pre-built workouts use their catchy title (“Phoenix Protocol”, “Burpee Storm”); otherwise the classic name is spoken. If the voice is off or unavailable you still get the beeps.
 
 ### Distance and GPS
 
@@ -139,6 +140,8 @@ After a block you can rate how it felt:
 For strength exercises you can also record the **weight** and **reps**. This feedback feeds your badges and the "Last feedback" shown in previews.
 
 The rating panel stays on screen for the whole rest pause — take your time: your choice stays highlighted with a ✓ and nothing closes automatically.
+
+> **Hands-free Rate (Supporter)** — when your **Supporter badge is active** (unlocked by watching an ad for 15 days / 30 workouts or donating for 30 days, see Supporter tab), you can rate without touching the screen: just say **“easy” / “normal” / “hard” / “not done”** (and the 10-language equivalents: `facile/normale/duro` …) and the app confirms with a short voice cue (“Easy, logged!”). Without Supporter the manual **Rate** button is always available; tapping the mic icon shows an upsell to the Supporter tab. The mic is active **only during a workout** and never leaves the device.
 
 ## 6. Creating and editing workouts
 
