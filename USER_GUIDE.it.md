@@ -116,6 +116,7 @@ Un contatore nell'intestazione dei filtri mostra quanti workout corrispondono. I
 - **Pausa / Riprendi** congela il timer (si ferma anche il tracciamento GPS).
 - **Stop** termina la sessione (chiede sempre conferma); anche la pressione del tasto **indietro** durante una sessione chiede conferma.
 - I **beep** e la **vibrazione** segnalano i cambi di fase — si possono disattivare nelle Impostazioni.
+- **Coach vocale (opzionale, opt-in)** — se attivato in **Impostazioni → Audio → Coach vocale** (spento di default), tra il beep `T-1` e il beep `GO` senti un breve annuncio col nome dell'attività, es. `“Sta per partire Burpees! 3, 2, 1, vai vai vai!”`. Con **Nomi divertenti attivi** (default, `Impostazioni → Workout → Nomi divertenti`) i workout predefiniti usano il titolo spiritoso (“Protocollo Phoenix”, “Tempesta Burpee”); altrimenti il nome classico. Se la voce è spenta o non disponibile restano solo i beep.
 
 ### Distanza e GPS
 
@@ -139,6 +140,8 @@ Dopo un blocco puoi valutare com'è andata:
 Per gli esercizi di forza puoi anche registrare il **peso** e le **ripetizioni**. Questo feedback alimenta i badge e l'indicazione "Ultimo feedback" nelle anteprime.
 
 Il pannello di valutazione resta visibile per tutta la pausa — prenditi il tuo tempo: la scelta resta evidenziata con un ✓ e nulla si chiude da solo.
+
+> **Valutazione a mani libere (Supporter)** — quando il badge **Supporter è attivo** (sbloccato guardando un annuncio per 15 giorni / 30 workout o donando per 30 giorni, vedi scheda Supporter), puoi valutare senza toccare lo schermo: basta dire **“facile” / “normale” / “duro” / “non fatto”** (e gli equivalenti nelle 10 lingue) e l’app conferma a voce (“Facile registrato!”). Senza Supporter resta sempre il bottone manuale **Valuta**; toccando l’icona mic compare l’invito alla scheda Supporter. Il microfono è attivo **solo durante il workout** e non lascia mai il dispositivo.
 
 ## 6. Creare e modificare workout
 
