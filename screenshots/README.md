@@ -127,12 +127,16 @@ schermata sul telefono, poi premete ENTER. Le catture Play Store finiscono in
 
 ### Post-processing (solo Play Store)
 Le catture native 1080×2400 non sono valide per Play (rapporto 2,22:1 > 2:1).
-Lo script le converte in PNG 1080×1920 con sfondo brand, angoli arrotondati e
-rimozione dell'alpha:
+Lo script ritaglia le system bar, disegna la cornice telefono, aggiunge la headline
+localizzata e compone lo sfondo brand, producendo PNG 1080×1920 senza alpha:
 ```bash
-python3 scripts/process_store_screenshots.py
+python3 scripts/process_store_screenshots.py            # IT + EN + feature graphic
+python3 scripts/process_store_screenshots.py --lang it  # una sola lingua
+python3 scripts/process_store_screenshots.py --no-crop  # catture in immersive mode
 ```
-Output: `play_store/01…08.png` (verificate dimensioni, assenza di alpha e peso ≤ 8 MB).
+Output: `play_store/{it,en}/01…08.png` e `play_store/feature_graphic_1024x500.png`
+(verificate dimensioni, assenza di alpha e peso ≤ 8 MB).
+Le headline si modificano in `scripts/store_render/copy_it.json` e `copy_en.json`.
 
 ### Dopo la cattura
 1. Allineate le didascalie in `docs/PLAY_STORE_LISTING.md` e `docs/STORE_TEXT_8_LANG.md`.
