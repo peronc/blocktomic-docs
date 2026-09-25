@@ -142,6 +142,22 @@ Le headline si modificano in `scripts/store_render/copy_it.json` e `copy_en.json
 La variante `--clean` (senza headline) finisce in `play_store/clean/01…08.png` ed è
 usata dalla sezione screenshot di `index.html`.
 
+### Feature graphic (1024×500)
+Generata da `make_feature_graphic()` dello stesso script in
+`play_store/feature_graphic_1024x500.png` (RGB senza alpha). Composizione:
+sfondo brand blu/lime, logo + `BLOCKTOMIC` + tagline in alto a sinistra, e tre
+telefoni a ventaglio con la **schermata Home in risalto**:
+
+| Ruolo | Screenshot | Posizione (x, y) |
+|---|---|---|
+| Dietro | `03_timer_running` | (455, 140) |
+| Secondo | `05_progress_badges` | (560, 80) |
+| **Hero (fronte)** | `01_workout_library` | (716, 8) |
+
+L'ordine dei file è `[03, 05, 01]`: l'ultimo è l'hero. Per cambiare l'immagine in
+risalto riordinare `feature_shots` in `main()`. Rigenerare solo la graphic:
+`python3 scripts/process_store_screenshots.py --feature-only`.
+
 ### Dopo la cattura
 1. Allineate le didascalie in `docs/PLAY_STORE_LISTING.md` e `docs/STORE_TEXT_8_LANG.md`.
 2. Caricate gli 8 PNG su **Play Console**, abbinandoli alle caption per lingua.
