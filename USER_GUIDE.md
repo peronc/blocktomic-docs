@@ -18,7 +18,7 @@ workouts, sessions and profile are stored locally on your device.
 
 1. Open Blocktomic → the **onboarding** appears on first launch:
 
-   - **Welcome** — a quick intro to the app, plus an accent color picker (five Neon shades; more are available later in Settings).
+   - **Welcome** — a quick intro to the app, plus an accent color picker (five shades shown here; all nine are available later in Settings).
    - **Preferences** — pick your preferred activity family, distance/weight units, and decide whether to enable **retention notifications** (gentle reminders to train — on by default).
    - **Suggestions** — choose your **name style** (*Catchy* or *Classic*) with a live preview on real workout cards, and start one right away if you like.
 
@@ -106,7 +106,7 @@ A counter in the filters header shows how many workouts match. Custom workouts a
   <img src="screenshots/guide/workout_card_anatomy.png" alt="Library card with catchy title and info line" width="260"/>
 </p>
 
-**Difficulty**: every pre-built card shows a difficulty chip — *Easy*, *Intermediate*, *Hard* or *Beast*.
+**Difficulty**: every pre-built card shows a difficulty chip — *Easy*, *Intermediate*, *Hard* or *Beast* (custom workouts don't have a difficulty level).
 
 **New workouts available**: when new pre-built workouts are distributed to the app, a banner appears at the top of the Workouts tab. Tap it to filter to the new ones, or dismiss it when you've seen them.
 
@@ -116,7 +116,7 @@ A counter in the filters header shows how many workouts match. Custom workouts a
 - **Pause / Resume** freezes the timer (GPS tracking also pauses).
 - **Stop** ends the session (always asks for confirmation); pressing **back** during a session asks for confirmation too.
 - **Beeps** and **vibration** signal phase changes — both can be turned off in Settings.
-- **Voice coach (optional, opt-in)** — when enabled in **Settings → Audio → Voice coach** (off by default), a short announcement plays between the `T-1` beep and the `GO` beep, e.g. `“Next: Burpees! 3, 2, 1, go go go!”`. With **Fun workout names on** (default, `Settings → Workout → Fun workout names`) pre-built workouts use their catchy title (“Phoenix Protocol”, “Burpee Storm”); otherwise the classic name is spoken. If the voice is off or unavailable you still get the beeps.
+- **Voice coach (optional, opt-in)** — 🚧 **Coming soon, not in the current release.** When it ships you'll enable it in **Settings → Audio → Voice coach** (off by default) and a short announcement will play between the `T-1` beep and the `GO` beep, e.g. `“Next: Burpees! 3, 2, 1, go go go!”`. With **Fun workout names on** (default, `Settings → Workout → Fun workout names`) pre-built workouts use their catchy title (“Phoenix Protocol”, “Burpee Storm”); otherwise the classic name is spoken. If the voice is off or unavailable you still get the beeps.
 
 ### Distance and GPS
 
@@ -141,7 +141,12 @@ For strength exercises you can also record the **weight** and **reps**. This fee
 
 The rating panel stays on screen for the whole rest pause — take your time: your choice stays highlighted with a ✓ and nothing closes automatically.
 
-> **Hands-free Rate (Supporter)** — when your **Supporter badge is active** (unlocked by watching an ad for 15 days / 30 workouts or donating for 30 days, see Supporter tab), you can rate without touching the screen: just say **“easy” / “normal” / “hard” / “not done”** (and the 10-language equivalents: `facile/normale/duro` …) and the app confirms with a short voice cue (“Easy, logged!”). Without Supporter the manual **Rate** button is always available; tapping the mic icon shows an upsell to the Supporter tab. The mic is active **only during a workout** and never leaves the device.
+> **Hands-free Rate (Supporter)** — 🚧 **Coming soon, not in the current release.** When it ships, and while your **Supporter badge is active** (unlocked by watching an ad for 15 days / 30 workouts or donating for 30 days, see Supporter tab), you'll be able to rate without touching the screen: just say **“easy” / “normal” / “hard” / “not done”** (and the 10-language equivalents: `facile/normale/duro` …) and the app confirms with a short voice cue (“Easy, logged!”). Without Supporter the manual **Rate** button is always available; tapping the mic icon shows an upsell to the Supporter tab. The mic will be active **only during a workout** and never leaves the device.
+
+<p align="center">
+  <img src="screenshots/placeholder/voice_coach.png" alt="Placeholder – Voice Coach (screenshot da acquisire)" width="260"/>
+  <img src="screenshots/placeholder/hands_free_rate.png" alt="Placeholder – Hands-free Rate (screenshot da acquisire)" width="260"/>
+</p>
 
 ## 6. Creating and editing workouts
 
@@ -165,7 +170,7 @@ The workout **family** (Endurance, HIIT, …) is derived automatically from its 
 
 Open the **activities manager** from the library app bar icon (categories icon).
 
-- Browse the default catalog (128 activities) with search and family filters.
+- Browse the default catalog (134 activities) with search and family filters.
 - **Add your own** activity: give it a name, pick an icon, decide if it supports distance / GPS, choose its families and a color.
 - **Default activities** are locked (to keep the app reliable); activities **you create** can be renamed or deleted at any time.
 - When new activities are distributed to the app, a banner appears here.
@@ -254,7 +259,7 @@ The badge also appears in your badge collection. A gentle weekly reminder is sho
 | **Preferred activity** | Your favourite family (Endurance, HIIT, Gym…) or no preference; it drives the workout suggestions on Home |
 | **Start delay** | Countdown before the timer starts (0–15 s) |
 | **Language** | System default or one of 11 languages |
-| **Theme** | Theme mode (system/light/dark), accent color (Cyan default, plus Green, and the Neon Red/Pink/Lime/Blue shades), screen rotation toggle |
+| **Theme** | Theme mode (system/light/dark), accent color (9 options; Cyan default, plus Green, Orange, Violet, Fuchsia, Neon Red, Neon Pink, Neon Lime, Neon Blue), screen rotation toggle |
 | **Style** | Visual style (Athletic default, plus Classic, Vibrant, Overdrive) |
 | **Workout** | Fun workout names on/off (catchy titles on cards, on by default) |
 | **Privacy** | "Share anonymous usage data" toggle |

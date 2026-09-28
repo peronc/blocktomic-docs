@@ -18,7 +18,7 @@ i tuoi workout, le sessioni e il profilo sono salvati solo sul tuo dispositivo.
 
 1. Apri Blocktomic → l'**onboarding** appare al primo avvio:
 
-   - **Benvenuto** — una breve introduzione all'app, più un selettore di colore accent (cinque tonalità Neon; altre sono disponibili più avanti nelle Impostazioni).
+   - **Benvenuto** — una breve introduzione all'app, più un selettore di colore accent (cinque tonalità mostrate qui; tutte e nove sono disponibili più avanti nelle Impostazioni).
    - **Preferenze** — scegli la famiglia di attività preferita, le unità di distanza/peso e decidi se attivare le **notifiche di retention** (promemoria delicati per allenarti — attive di default).
    - **Suggerimenti** — scegli lo **stile dei nomi** (*Spiritosi* o *Normali*) con anteprima dal vivo su card reali e, se vuoi, avvia subito un allenamento.
 
@@ -106,7 +106,7 @@ Un contatore nell'intestazione dei filtri mostra quanti workout corrispondono. I
   <img src="screenshots/guide/workout_card_anatomy.png" alt="Card della libreria con titolo spiritoso e riga info" width="260"/>
 </p>
 
-**Difficoltà**: ogni card predefinita mostra una chip di difficoltà — *Facile*, *Intermedio*, *Difficile* o *Bestia*.
+**Difficoltà**: ogni card predefinita mostra una chip di difficoltà — *Facile*, *Intermedio*, *Difficile* o *Bestia* (i workout personalizzati non hanno un livello di difficoltà).
 
 **Nuovi workout disponibili**: quando arrivano nuovi workout predefiniti, un banner appare in cima alla scheda Workouts. Toccalo per filtrare sui nuovi, oppure chiudilo quando li hai visti.
 
@@ -116,7 +116,7 @@ Un contatore nell'intestazione dei filtri mostra quanti workout corrispondono. I
 - **Pausa / Riprendi** congela il timer (si ferma anche il tracciamento GPS).
 - **Stop** termina la sessione (chiede sempre conferma); anche la pressione del tasto **indietro** durante una sessione chiede conferma.
 - I **beep** e la **vibrazione** segnalano i cambi di fase — si possono disattivare nelle Impostazioni.
-- **Coach vocale (opzionale, opt-in)** — se attivato in **Impostazioni → Audio → Coach vocale** (spento di default), tra il beep `T-1` e il beep `GO` senti un breve annuncio col nome dell'attività, es. `“Sta per partire Burpees! 3, 2, 1, vai vai vai!”`. Con **Nomi divertenti attivi** (default, `Impostazioni → Workout → Nomi divertenti`) i workout predefiniti usano il titolo spiritoso (“Protocollo Phoenix”, “Tempesta Burpee”); altrimenti il nome classico. Se la voce è spenta o non disponibile restano solo i beep.
+- **Coach vocale (opzionale, opt-in)** — 🚧 **In arrivo, non nella release attuale.** Quando sarà disponibile, lo attiverai in **Impostazioni → Audio → Coach vocale** (spento di default) e tra il beep `T-1` e il beep `GO` sentirai un breve annuncio col nome dell'attività, es. `“Sta per partire Burpees! 3, 2, 1, vai vai vai!”`. Con **Nomi divertenti attivi** (default, `Impostazioni → Workout → Nomi divertenti`) i workout predefiniti usano il titolo spiritoso (“Protocollo Phoenix”, “Tempesta Burpee”); altrimenti il nome classico. Se la voce è spenta o non disponibile restano solo i beep.
 
 ### Distanza e GPS
 
@@ -141,7 +141,12 @@ Per gli esercizi di forza puoi anche registrare il **peso** e le **ripetizioni**
 
 Il pannello di valutazione resta visibile per tutta la pausa — prenditi il tuo tempo: la scelta resta evidenziata con un ✓ e nulla si chiude da solo.
 
-> **Valutazione a mani libere (Supporter)** — quando il badge **Supporter è attivo** (sbloccato guardando un annuncio per 15 giorni / 30 workout o donando per 30 giorni, vedi scheda Supporter), puoi valutare senza toccare lo schermo: basta dire **“facile” / “normale” / “duro” / “non fatto”** (e gli equivalenti nelle 10 lingue) e l’app conferma a voce (“Facile registrato!”). Senza Supporter resta sempre il bottone manuale **Valuta**; toccando l’icona mic compare l’invito alla scheda Supporter. Il microfono è attivo **solo durante il workout** e non lascia mai il dispositivo.
+> **Valutazione a mani libere (Supporter)** — 🚧 **In arrivo, non nella release attuale.** Quando sarà disponibile, e mentre il badge **Supporter è attivo** (sbloccato guardando un annuncio per 15 giorni / 30 workout o donando per 30 giorni, vedi scheda Supporter), potrai valutare senza toccare lo schermo: basta dire **“facile” / “normale” / “duro” / “non fatto”** (e gli equivalenti nelle 10 lingue) e l’app confermerà a voce (“Facile registrato!”). Senza Supporter resta sempre il bottone manuale **Valuta**; toccando l’icona mic compare l’invito alla scheda Supporter. Il microfono sarà attivo **solo durante il workout** e non lascerà mai il dispositivo.
+
+<p align="center">
+  <img src="screenshots/placeholder/voice_coach.png" alt="Segnaposto – Coach vocale (screenshot da acquisire)" width="260"/>
+  <img src="screenshots/placeholder/hands_free_rate.png" alt="Segnaposto – Valutazione a mani libere (screenshot da acquisire)" width="260"/>
+</p>
 
 ## 6. Creare e modificare workout
 
@@ -165,7 +170,7 @@ La **famiglia** del workout (Endurance, HIIT, …) viene derivata automaticament
 
 Apri la **gestione attività** dall'icona nella barra della libreria (icona categorie).
 
-- Sfoglia il catalogo di default (128 attività) con ricerca e filtri per famiglia.
+- Sfoglia il catalogo di default (134 attività) con ricerca e filtri per famiglia.
 - **Aggiungi un'attività tua**: dagli un nome, scegli un'icona, decidi se supporta distanza/GPS, scegli le famiglie e un colore.
 - Le **attività di default** sono bloccate (per affidabilità); le attività **che crei tu** possono essere rinominate o eliminate in qualsiasi momento.
 - Quando arrivano nuove attività distribuite all'app, compare un banner qui.
@@ -254,7 +259,7 @@ Il badge appare anche nella tua collezione. Un leggero promemoria settimanale vi
 | **Attività preferita** | La famiglia che preferisci (Endurance, HIIT, Gym…) o nessuna; alimenta i suggerimenti dei workout in Home |
 | **Start delay** | Countdown prima dell'avvio del timer (0–15 s) |
 | **Language** | Lingua di sistema o una delle 11 lingue |
-| **Tema** | Modalità tema (system/light/dark), colore accento (Ciano di default, più Verde e le sfumature Rosso/Rosa/Lime/Blu neon), toggle rotazione schermo |
+| **Tema** | Modalità tema (system/light/dark), colore accento (9 opzioni; Ciano di default, più Verde, Arancione, Viola, Fucsia, Rosso, Rosa, Lime e Blu neon), toggle rotazione schermo |
 | **Stile** | Stile visivo (Athletic di default, più Classic, Vibrant, Overdrive) |
 | **Workout** | Nomi divertenti dei workout on/off (titoli spiritosi sulle card, attivi di default) |
 | **Privacy** | Toggle "Condividi dati anonimi di utilizzo" |

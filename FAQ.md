@@ -72,7 +72,7 @@ Go to Workouts > My Workouts, tap the + button. Add blocks (intervals) with the 
 - **Open-ended**: stopwatch-style, complete when you're ready.
 
 ### What activities are available?
-Over 128 activities across 6 families: Endurance, HIIT, Gym, Calisthenics, Flexibility, and Other. Includes running, cycling, bench press, squats, pull-ups, burpees, stretching, and more.
+Over 134 activities across 6 families: Endurance, HIIT, Gym, Calisthenics, Flexibility, and Other. Includes running, cycling, bench press, squats, pull-ups, burpees, stretching, and more.
 
 ### Can I use Blocktomic for gym workouts?
 Yes. Create reps-based blocks with target weight, sets, and rest between sets. Track your progress for each exercise.
@@ -120,12 +120,15 @@ Yes. Settings > Start Delay (0 to 15 seconds). This is the countdown before your
 ### Can I turn off beeps or vibration?
 Yes. Settings > Audio (sounds/beeps) and Settings > Vibration. Toggle each on or off.
 
+### Is there a voice coach or voice commands?
+Not yet. A **voice coach** (a short spoken cue before the `GO` beep) and **hands-free voice rating** (say "easy" / "normal" / "hard" / "not done") are planned but **not in the current release**. Until then you get the beeps and the manual **Rate** button.
+
 ---
 
 ## GPS
 
 ### How accurate is the GPS tracking?
-Blocktomic uses high-accuracy location (`LocationAccuracy.best`). Accuracy depends on your device. Positions with accuracy worse than 50m are filtered out.
+Blocktomic uses high-accuracy location (`LocationAccuracy.best`). Accuracy depends on your device. Positions with accuracy worse than 20m are filtered out.
 
 ### Can I use the app without GPS?
 Yes. For distance-based blocks, you can enter distance manually by tapping the distance readout.

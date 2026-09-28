@@ -225,15 +225,18 @@ If your Supporter badge is expired:
 - Tapping the notification opens the Support tab.
 - You can turn off reminder notifications in device settings.
 
-### Voice Coach (optional, opt-in)
+### Voice Coach (optional, opt-in) — 🚧 Coming soon
 
-When enabled in **Settings → Audio → Voice coach** (off by default), a short announcement plays between the `T-1` beep and the `GO` beep — e.g. `“Next: Burpees! 3, 2, 1, go go go!”`. With **Fun workout names on** (default, `Settings → Workout → Fun workout names`) pre-built workouts use their catchy title (“Phoenix Protocol”, “Burpee Storm”); otherwise the classic name is spoken. The phrase is intentionally short (≤8 words, ≤1.2s) so it never covers the `GO`. If the voice is off or unavailable you still get the beeps. Spec: `docs/AI_STRATEGY.md §3 Tier 1 (F2-41a)` + `docs/BEEP_DESIGN.md §11`.
+> **Not in the current release.** When it ships you'll enable it in **Settings → Audio → Voice coach** (off by default) and a short announcement will play between the `T-1` beep and the `GO` beep — e.g. `“Next: Burpees! 3, 2, 1, go go go!”`. With **Fun workout names on** (default, `Settings → Workout → Fun workout names`) pre-built workouts use their catchy title (“Phoenix Protocol”, “Burpee Storm”); otherwise the classic name is spoken. The phrase is intentionally short (≤8 words, ≤1.2s) so it never covers the `GO`. If the voice is off or unavailable you still get the beeps.
 
-### Hands-free Rate (Supporter — minimal friction default)
+### Hands-free Rate (Supporter) — 🚧 Coming soon
 
-When your **Supporter badge is active** (rewarded ad → 15 days / 30 workouts, donation → 30 days, see above), you can rate without touching the screen: say **“easy” / “normal” / “hard” / “not done”** (and the 10-language equivalents `facile/normale/duro` …) and the app confirms with a short voice cue (“Easy, logged!”). Without Supporter the manual **Rate** button is always available; tapping the mic icon shows an upsell to the Supporter tab. The mic is active **only during a workout** and never leaves the device. This is the **default minimal-friction path** (`AI_STRATEGY.md §3 Tier 1.6b F2-41b`, `BASELINE §9 F2-41b`).
+> **Not in the current release.** When your **Supporter badge is active** (rewarded ad → 15 days / 30 workouts, donation → 30 days, see above), you'll be able to rate without touching the screen: say **“easy” / “normal” / “hard” / “not done”** (and the 10-language equivalents `facile/normale/duro` …) and the app confirms with a short voice cue (“Easy, logged!”). Without Supporter the manual **Rate** button is always available; tapping the mic icon shows an upsell to the Supporter tab. The mic will be active **only during a workout** and never leaves the device.
 
-> **Parked alternatives (documented, not implemented):** a dedicated short burst entitlement per ad (e.g. 24h or 3 workouts only for Rate) and a hybrid 1-workout preview → full Supporter are recorded as parked options in `docs/AI_STRATEGY.md §7` and `docs/BASELINE §9`. They require a separate `SharedPreferences` key and a second countdown, so they stay parked to keep friction minimal until `MAU ≥1k` or A/B data justifies them.
+<p align="center">
+  <img src="screenshots/placeholder/voice_coach.png" alt="Placeholder – Voice Coach (screenshot da acquisire)" width="260"/>
+  <img src="screenshots/placeholder/hands_free_rate.png" alt="Placeholder – Hands-free Rate (screenshot da acquisire)" width="260"/>
+</p>
 
 ### Coming Soon
 
@@ -242,8 +245,11 @@ The Support tab also lists planned features coming to the app (marked with a loc
 - **Cloud Backup** — back up and restore your data across devices.
 - **Pro Mode** — a premium tier with extra features.
 - **Custom Sounds** — choose your own workout sounds.
-- **Duplicate Prebuilt** — duplicate any pre-built workout with one tap.
 - **Form Coach** — guidance on exercise form.
+- **Voice Coach** — spoken cue between the T-1 beep and the GO beep.
+- **Hands-free Rate** — rate a block by voice during the workout.
+
+> **Already available:** duplicating a pre-built workout with one tap is not "coming soon" — see [WORKOUT_GUIDE.md](WORKOUT_GUIDE.html) for how to duplicate.
 
 ---
 

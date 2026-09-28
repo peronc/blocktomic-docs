@@ -100,7 +100,7 @@ During the workout:
 
 ## Activities
 
-Each block is linked to an activity from Blocktomic's catalog of **128 activities**. Activities are organized by **sport family**:
+Each block is linked to an activity from Blocktomic's catalog of **134 activities**. Activities are organized by **sport family**:
 
 | Family | Examples |
 |---|---|
@@ -189,13 +189,14 @@ The timer screen is your control center during a workout.
 - **Beep end**: different-pitch beep when a phase ends.
 - **Vibration**: short pulse at phase changes.
 - All configurable in Settings > Audio / Vibration.
+- **Voice coach**: 🚧 coming soon (a short spoken cue between the `T-1` and `GO` beeps).
 
 ### Background Behavior
 
 | Scenario | Behavior |
 |---|---|
-| **App goes to background** | Timer pauses, beeps stop, GPS pauses |
-| **App comes back to foreground** | Timer screen resumes |
+| **App goes to background** | Timer, beeps and GPS keep running (foreground service with a persistent notification) |
+| **App comes back to foreground** | You return to the timer screen, still in sync |
 | **Notification (GPS tracking)** | Persistent notification: "Workout in progress" |
 
 ---
