@@ -1,4 +1,18 @@
 # Catture native degli screenshot: solo locali (output processati in play_store/)
 screenshots/play_store/raw/
 
+# Scarti / versioni precedenti degli screenshot: solo locali
+screenshots/**/archive/
+
+# Segreti e configurazioni (non devono mai finire nel repo pubblico)
+.env
+*.env
+serviceAccountKey.json
+*serviceAccount*.json
+*.jks
+*.keystore
+key.properties
+
+# Sistema e log
 .DS_Store
+*.log
