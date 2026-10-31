@@ -227,7 +227,7 @@ If your Supporter badge is expired:
 
 ### Voice Coach (optional, opt-in) — 🚧 Coming in the next release
 
-> **Not in the currently published release.** Enable it in **Settings → Notifications → Voice Coach** (off by default). You can pick one of three personas (wry Companion, energetic Coach, firm Sergeant), choose how often it speaks and preview the voice. During a workout it announces the activity (“Activity: running.”) or the numbered set (“First set: burpees.”), rest, the last 30/10 seconds and distance thresholds. The audio pack is pre-generated and works **offline**, with no on-device TTS engine. If the voice is off or a clip is unavailable you still get the beeps.
+> **Not in the currently published release.** Enable it in **Settings → Notifications → Voice Coach** (off by default). During a workout the **coach avatar sits in the top-right**: tap it to pick one of three personas (wry Companion, energetic Coach, firm Sergeant), adjust frequency, preview the voice or enable the coach. It announces the activity (“Activity: running.”) or the numbered set (“First set: burpees.”), rest, the last 30/10 seconds and distance thresholds. The audio pack is pre-generated and works **offline**, with no on-device TTS engine. When audio is muted the phrase appears in a **bubble**; if the voice is off or a clip is unavailable you still get the beeps.
 
 ### Hands-free Rate (Supporter) — 🚧 Coming soon
 

@@ -116,7 +116,7 @@ A counter in the filters header shows how many workouts match. Custom workouts a
 - **Pause / Resume** freezes the timer (GPS tracking also pauses).
 - **Stop** ends the session (always asks for confirmation); pressing **back** during a session asks for confirmation too.
 - **Beeps** and **vibration** signal phase changes — both can be turned off in Settings.
-- **Voice coach (optional, opt-in)** — 🚧 **Coming in the next release.** Enable it in **Settings → Notifications → Voice Coach** (off by default). You can pick one of three personas (wry Companion, energetic Coach, firm Sergeant), choose how often it speaks and preview the voice. During a workout it announces the activity (“Activity: running.”) or the numbered set (“First set: burpees.”), rest, the last 30/10 seconds and distance thresholds. The audio pack is pre-generated and works **offline**, with no on-device TTS engine. If the voice is off or a clip is unavailable you still get the beeps.
+- **Voice coach (optional, opt-in)** — 🚧 **Coming in the next release.** Enable it in **Settings → Notifications → Voice Coach** (off by default). During a workout the **coach avatar sits in the top-right**: tap it to pick one of three personas (wry Companion, energetic Coach, firm Sergeant), adjust frequency, preview the voice or enable the coach. It announces the activity (“Activity: running.”) or the numbered set (“First set: burpees.”), rest, the last 30/10 seconds and distance thresholds. The audio pack is pre-generated and works **offline**, with no on-device TTS engine. When audio is muted the phrase appears in a **bubble**; if the voice is off or a clip is unavailable you still get the beeps.
 
 ### Distance and GPS
 
