@@ -189,7 +189,7 @@ The timer screen is your control center during a workout.
 - **Beep end**: different-pitch beep when a phase ends.
 - **Vibration**: short pulse at phase changes.
 - All configurable in Settings > Audio / Vibration.
-- **Voice coach**: 🚧 coming soon (a short spoken cue between the `T-1` and `GO` beeps).
+- **Voice coach**: 🚧 coming in the next release — spoken activity names, numbered sets, rest and countdown announcements.
 
 ### Background Behavior
 

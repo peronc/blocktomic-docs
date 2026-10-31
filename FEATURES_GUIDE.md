@@ -225,9 +225,9 @@ If your Supporter badge is expired:
 - Tapping the notification opens the Support tab.
 - You can turn off reminder notifications in device settings.
 
-### Voice Coach (optional, opt-in) — 🚧 Coming soon
+### Voice Coach (optional, opt-in) — 🚧 Coming in the next release
 
-> **Not in the current release.** When it ships you'll enable it in **Settings → Audio → Voice coach** (off by default) and a short announcement will play between the `T-1` beep and the `GO` beep — e.g. `“Next: Burpees! 3, 2, 1, go go go!”`. With **Fun workout names on** (default, `Settings → Workout → Fun workout names`) pre-built workouts use their catchy title (“Phoenix Protocol”, “Burpee Storm”); otherwise the classic name is spoken. The phrase is intentionally short (≤8 words, ≤1.2s) so it never covers the `GO`. If the voice is off or unavailable you still get the beeps.
+> **Not in the currently published release.** Enable it in **Settings → Notifications → Voice Coach** (off by default). You can pick one of three personas (wry Companion, energetic Coach, firm Sergeant), choose how often it speaks and preview the voice. During a workout it announces the activity (“Activity: running.”) or the numbered set (“First set: burpees.”), rest, the last 30/10 seconds and distance thresholds. The audio pack is pre-generated and works **offline**, with no on-device TTS engine. If the voice is off or a clip is unavailable you still get the beeps.
 
 ### Hands-free Rate (Supporter) — 🚧 Coming soon
 
@@ -246,7 +246,7 @@ The Support tab also lists planned features coming to the app (marked with a loc
 - **Pro Mode** — a premium tier with extra features.
 - **Custom Sounds** — choose your own workout sounds.
 - **Form Coach** — guidance on exercise form.
-- **Voice Coach** — spoken cue between the T-1 beep and the GO beep.
+- **Voice Coach** — spoken activity names, numbered sets, rest and countdown announcements.
 - **Hands-free Rate** — rate a block by voice during the workout.
 
 > **Already available:** duplicating a pre-built workout with one tap is not "coming soon" — see [WORKOUT_GUIDE.md](WORKOUT_GUIDE.html) for how to duplicate.

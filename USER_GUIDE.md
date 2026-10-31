@@ -116,7 +116,7 @@ A counter in the filters header shows how many workouts match. Custom workouts a
 - **Pause / Resume** freezes the timer (GPS tracking also pauses).
 - **Stop** ends the session (always asks for confirmation); pressing **back** during a session asks for confirmation too.
 - **Beeps** and **vibration** signal phase changes — both can be turned off in Settings.
-- **Voice coach (optional, opt-in)** — 🚧 **Coming soon, not in the current release.** When it ships you'll enable it in **Settings → Audio → Voice coach** (off by default) and a short announcement will play between the `T-1` beep and the `GO` beep, e.g. `“Next: Burpees! 3, 2, 1, go go go!”`. With **Fun workout names on** (default, `Settings → Workout → Fun workout names`) pre-built workouts use their catchy title (“Phoenix Protocol”, “Burpee Storm”); otherwise the classic name is spoken. If the voice is off or unavailable you still get the beeps.
+- **Voice coach (optional, opt-in)** — 🚧 **Coming in the next release.** Enable it in **Settings → Notifications → Voice Coach** (off by default). You can pick one of three personas (wry Companion, energetic Coach, firm Sergeant), choose how often it speaks and preview the voice. During a workout it announces the activity (“Activity: running.”) or the numbered set (“First set: burpees.”), rest, the last 30/10 seconds and distance thresholds. The audio pack is pre-generated and works **offline**, with no on-device TTS engine. If the voice is off or a clip is unavailable you still get the beeps.
 
 ### Distance and GPS
 
