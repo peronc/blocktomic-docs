@@ -121,7 +121,7 @@ Yes. Settings > Start Delay (0 to 15 seconds). This is the countdown before your
 Yes. Settings > Audio (sounds/beeps) and Settings > Vibration. Toggle each on or off.
 
 ### Is there a voice coach or voice commands?
-Not yet. A **voice coach** (a short spoken cue before the `GO` beep) and **hands-free voice rating** (say "easy" / "normal" / "hard" / "not done") are planned but **not in the current release**. Until then you get the beeps and the manual **Rate** button.
+Yes. The **voice coach** is available in **Settings → Notifications → Voice Coach** (off by default): it announces the activity, numbered sets, rest, warm-up/cool-down and countdowns in 11 languages, with three personas, an avatar in the timer and a speech bubble when audio is muted. **Hands-free voice rating** ("easy" / "normal" / "hard" / "not done") is still planned and not in the current release; for now use the manual **Rate** button.
 
 ---
 

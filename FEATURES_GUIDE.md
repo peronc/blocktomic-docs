@@ -225,9 +225,9 @@ If your Supporter badge is expired:
 - Tapping the notification opens the Support tab.
 - You can turn off reminder notifications in device settings.
 
-### Voice Coach (optional, opt-in) — 🚧 Coming in the next release
+### Voice Coach (optional, opt-in)
 
-> **Not in the currently published release.** Enable it in **Settings → Notifications → Voice Coach** (off by default). During a workout the **coach avatar sits in the top-right**: tap it to pick one of three personas (wry Companion, energetic Coach, firm Sergeant), adjust frequency, preview the voice, or **turn the coach off immediately** with the switch (“Undo” if you tap by mistake). It announces the activity (“Running.”) or the numbered set (“First set: burpees.”), warm-up and cool-down, rest, the last 30/10 seconds and distance thresholds. The audio pack is pre-generated and works **offline**, with no on-device TTS engine. When audio is muted the phrase appears in a **bubble**; at the end of the workout the **coach's face** replaces the trophy while the final line plays. If the voice is off or a clip is unavailable you still get the beeps.
+> Enable it in **Settings → Notifications → Voice Coach** (off by default). During a workout the **coach avatar sits in the top-right**: tap it to pick one of three personas (wry Companion, energetic Coach, firm Sergeant), adjust frequency, preview the voice, or **turn the coach off immediately** with the switch (“Undo” if you tap by mistake). It announces the activity (“Running.”) or the numbered set (“First set: burpees.”), warm-up and cool-down, rest, the last 30/10 seconds and distance thresholds. The audio pack is pre-generated and works **offline**, with no on-device TTS engine. When audio is muted the phrase appears in a **bubble**; at the end of the workout the **coach's face** replaces the trophy while the final line plays. If the voice is off or a clip is unavailable you still get the beeps.
 
 ### Hands-free Rate (Supporter) — 🚧 Coming soon
 

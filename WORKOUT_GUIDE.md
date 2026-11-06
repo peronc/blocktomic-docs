@@ -189,7 +189,7 @@ The timer screen is your control center during a workout.
 - **Beep end**: different-pitch beep when a phase ends.
 - **Vibration**: short pulse at phase changes.
 - All configurable in Settings > Audio / Vibration.
-- **Voice coach**: 🚧 coming in the next release — spoken activity names, numbered sets, rest and countdown announcements.
+- **Voice coach**: spoken activity names, numbered sets, rest and countdown announcements.
 
 ### Background Behavior
 
@@ -290,7 +290,7 @@ When you finish (or stop) a workout:
 
 ## Pre-built Workouts
 
-Blocktomic ships with **44 ready-to-use workouts** across every family:
+Blocktomic ships with **48 ready-to-use workouts** across every family:
 
 | Family | Count | Highlights |
 |---|---|---|
